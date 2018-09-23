@@ -1,0 +1,113 @@
+#CodeBook
+
+##This is the code book for Getting and Cleaning data Peer Revied Project
+
+The data is wearable data from the 'Human Activity Recognition Using Smartphones Data Set' from the
+University of California , Irvine Machine Learning Repository.
+
+The file is downloaded from 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+
+### Writing a R Script called Run_analysis that doens the following
+1. Download and extract the data
+2. Extracts only the measurements on the mean and standard deviation for each measurement
+3. Merges the training and the test sets to create one data set
+4. Uses descriptive activity names to name the activities in the data set
+5. Appropriately labels the data set with descriptive variable names
+6. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+### Steps taken
+1. Dowload data
+2. UnZip Data
+3. Read activity labes into a table
+3. read features into a table
+4. Extract only the features for mean and standard deviation using grep and gsub
+5. Read train data into a table
+6. Reac test data intoa  table
+7. Merge test, train and label data into a table
+8. write table to a text file
+
+###The fowlling columns are created
+
+*  subject
+*  activity
+*  tBodyAccMeanX
+*  tBodyAccMeanY
+*  tBodyAccMeanZ
+*  tBodyAccStdX
+*  tBodyAccStdY
+*  tBodyAccStdZ
+*  tGravityAccMeanX
+*  tGravityAccMeanY
+*  tGravityAccMeanZ
+*  tGravityAccStdX
+*  tGravityAccStdY
+*  tGravityAccStdZ
+*  tBodyAccJerkMeanX
+*  tBodyAccJerkMeanY
+*  tBodyAccJerkMeanZ
+*  tBodyAccJerkStdX
+*  tBodyAccJerkStdY
+*  tBodyAccJerkStdZ
+*  tBodyGyroMeanX
+*  tBodyGyroMeanY
+*  tBodyGyroMeanZ
+*  tBodyGyroStdX
+*  tBodyGyroStdY
+*  tBodyGyroStdZ
+*  tBodyGyroJerkMeanX
+*  tBodyGyroJerkMeanY
+*  tBodyGyroJerkMeanZ
+*  tBodyGyroJerkStdX
+*  tBodyGyroJerkStdY
+*  tBodyGyroJerkStdZ
+*  tBodyAccMagMean
+*  tBodyAccMagStd
+*  tGravityAccMagMean
+*  tGravityAccMagStd
+*  tBodyAccJerkMagMean
+*  tBodyAccJerkMagStd
+*  tBodyGyroMagMean
+*  tBodyGyroMagStd
+*  tBodyGyroJerkMagMean
+*  tBodyGyroJerkMagStd
+*  fBodyAccMeanX
+*  fBodyAccMeanY
+*  fBodyAccMeanZ
+*  fBodyAccStdX
+*  fBodyAccStdY
+*  fBodyAccStdZ
+*  fBodyAccMeanFreqX
+*  fBodyAccMeanFreqY
+*  fBodyAccMeanFreqZ
+*  fBodyAccJerkMeanX
+*  fBodyAccJerkMeanY
+*  fBodyAccJerkMeanZ
+*  fBodyAccJerkStdX
+*  fBodyAccJerkStdY
+*  fBodyAccJerkStdZ
+*  fBodyAccJerkMeanFreqX
+*  fBodyAccJerkMeanFreqY
+*  fBodyAccJerkMeanFreqZ
+*  fBodyGyroMeanX
+*  fBodyGyroMeanY
+*  fBodyGyroMeanZ
+*  fBodyGyroStdX
+*  fBodyGyroStdY
+*  fBodyGyroStdZ
+*  fBodyGyroMeanFreqX
+*  fBodyGyroMeanFreqY
+*  fBodyGyroMeanFreqZ
+*  fBodyAccMagMean
+*  fBodyAccMagStd
+*  fBodyAccMagMeanFreq
+*  fBodyBodyAccJerkMagMean
+*  fBodyBodyAccJerkMagStd
+*  fBodyBodyAccJerkMagMeanFreq
+*  fBodyBodyGyroMagMean
+*  fBodyBodyGyroMagStd
+*  fBodyBodyGyroMagMeanFreq
+*  fBodyBodyGyroJerkMagMean
+*  fBodyBodyGyroJerkMagStd
+*  fBodyBodyGyroJerkMagMeanFreq
